@@ -1,3 +1,5 @@
+https://arbakovaanastasia.github.io/layout-html-scss-bem/
+
 БЭМ BEM (Block, Element, Modifier):
 - Блок (Block). Независимый компонент, который может содержать другие блоки или элементы. Примеры: header, menu, button.
 - Элемент (Element). Части блока, которые не имеют смысла вне контекста блока. Имена элементов формируются с использованием двойного подчёркивания (__). Примеры: header__logo, menu__item. 1
