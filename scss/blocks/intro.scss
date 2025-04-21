@@ -1,4 +1,5 @@
 .intro-analytics {
+    position: relative;
     padding-top: 50px;
 
     &::after {
@@ -32,6 +33,10 @@
 .header {
     display: flex;
     align-items: center;
+
+    .header__menu-btn{
+        display: none;
+    }
 
     nav {
         flex-grow: 1;
@@ -133,6 +138,11 @@
 
     &__btn {
         @include btn(transparent, $pink, 68px, #fff, 16px, 15px, 80px);
+        transition: all 0.5s;
+
+        &:hover {
+            @include btn($pink, transparent, 68px, #fff, 16px, 15px, 80px);
+        }
     }
 
     &__pictures {
@@ -156,6 +166,175 @@
             height: 550px;
             box-shadow: 0 18px 50px -15px rgbs(25, 42, 89, 0.2);
             border-radius: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .intro-analytics {
+        &::after, &::before {
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+    }
+
+    .wrap-padding {
+        padding: 0 15px;
+    }
+
+    .header {
+        justify-content: space-between;
+
+        &__logo {
+            flex-grow: 1;
+        }
+
+        .header__menu-btn {
+            display: block;
+            position: relative;
+            z-index: 2;
+
+            input {
+                cursor: pointer;
+                position: relative;
+                visibility: hidden;
+                width: 24px;
+                height: 24px;
+
+                &:checked {
+                    ~ .header__menu--side {
+                        opacity: 1;
+                        transform: translateX(0)
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    top: 0;
+                    left: 0;
+                    visibility: visible;
+                    background: url('../../assets/icons/menu-icon.svg') no-repeat;
+                }
+            }
+        }
+
+        &__menu--side {
+            position: absolute;
+            z-index: 2;
+            top: 40px;
+            right: -15px;
+            background: #1e3681;
+            padding: 15px 20px;
+            border-radius: 5px;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: all 0.5s;
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        &__menu--adaptive {
+            display: none;
+        }
+        &__btn--adaptive {
+            display: none;
+        }
+    }
+
+    .dashboard {
+        padding-top: 80px;
+        flex-direction: column;
+
+        &__info {
+            max-width: 100%;
+            margin-right: 0;
+        }
+
+        &__title {
+            text-align: center;
+
+            &::before, &::after {
+                display: none;
+            }
+        }
+
+        &__btn {
+            margin: 0 auto;
+            display: block;
+        }
+
+        &__pictures {
+            margin: 0 auto;
+
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -10%);
+                width: 520px;
+                height: 359px;
+            }
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .intro-analytics {
+        &::after, &::before {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 20px;
+
+        &__logo {
+            margin-right: 0;
+        }
+
+        .header__menu-btn {
+            input {
+                &:checked {
+                    ~ .header__menu--side {
+                        transform: translateX(30%);
+                    }
+                }
+            }
+        }
+    }
+
+    .dashboard {
+        padding-top: 40px;
+        padding-bottom: 150px;
+        
+        &__title {
+            font-size: 36px;
+        }
+
+        &__text{
+            font-size: 16px;
+        }
+
+        &__pictures {
+            &::before{
+                display: none;
+            }
         }
     }
 }

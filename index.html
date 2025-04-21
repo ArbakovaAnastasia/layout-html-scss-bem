@@ -10,14 +10,14 @@
 <body class="container">
     <!-- 1 part -->
     <section class="intro-analytics">
-        <div class="wrap">
+        <div class="wrap wrap-padding">
             <!-- header -->
             <header class="header">
                 <a href="#" class="header__logo">
                     <img src="assets/icons/logo.svg" alt="logo">
                     <p>Analytics</p>
                 </a>
-                <nav class="header__menu">
+                <nav class="header__menu header__menu--adaptive">
                     <ul class="header__menu-list">
                         <li class="header__menu-item"><a href="#">Products</a></li>
                         <li class="header__menu-item"><a href="#">Pricing</a></li>
@@ -28,10 +28,21 @@
                 </nav>
                 <div class="header__btns">
                     <button class="header__btn--transparent">Sign In</button>
-                    <button class="header__btn--circled">Sign Up</button>
+                    <button class="header__btn--circled header__menu--adaptive">Sign Up</button>
+                </div>
+                <div class="header__menu-btn">
+                    <input type="checkbox">
+                    <nav class="header__menu header__menu--side">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="#" class="header__menu-link">Products</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-link">Pricing</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-link">FAQ</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-link">Blog</a></li>
+                            <li class="header__menu-item"><a href="#" class="header__menu-link">Analytics</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
-            <!-- dashboard -->
             <div class="dashboard">
                 <div class="dashboard__info">
                     <h1 class="dashboard__title">Monitor your business on real-time dashboard</h1>
@@ -44,6 +55,122 @@
             </div>
         </div>
     </section>
-    
+    <!-- 2 part -->
+    <section class="main-features">
+        <div class="wrap wrap-padding">
+            <h2 class="main-features__title">Main Features</h2>
+            <p class="main-features__text-block">Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sapiente, odit consequatur iure unde neque voluptas nostrum ipsum temporibus quo?</p>
+            <div class="main-features__advantages">
+                <div class="main-features__advantage-item">
+                    <img src="assets/icons/monitoring.svg" alt="Monitoring" class="main-features__advantage-icon">
+                    <h3 class="main-features__advantage-title">Monitoring 24/7</h3>
+                    <p class="main-features__advantage-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In consequuntur, tempora excepturi beatae laudantium et.</p>
+                </div>
+                <div class="main-features__advantage-item">
+                    <img src="assets/icons/widgets.svg" alt="Widget" class="main-features__advantage-icon">
+                    <h3 class="main-features__advantage-title">Widget System</h3>
+                    <p class="main-features__advantage-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, praesentium!</p>
+                </div>
+                <div class="main-features__advantage-item">
+                    <img src="assets/icons/performance.svg" alt="Perfomance" class="main-features__advantage-icon">
+                    <h3 class="main-features__advantage-title">Best Perfomance</h3>
+                    <p class="main-features__advantage-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem hic fuga expedita ad sed et culpa aut!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3 part -->
+    <section class="roadmap">
+        <div class="wrap wrap-padding">
+            <div class="roadmap__item">
+                <div class="roadmap__description">
+                    <h3 class="roadmap__title">Automated Reports & Widget Alerts</h3>
+                    <p class="roadmap__text-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, placeat odit sed eum dolorem iure nam neque. Voluptate et optio nulla consequatur rerum! Consectetur, consequatur.</p>
+                </div>
+                <div class="roadmap__picture">
+                    <img src="assets/img/screen-01.png" alt="picture roadmap">
+                </div>
+            </div>
+            <div class="roadmap__item roadmap__item--right">
+                <div class="roadmap__description">
+                    <h3 class="roadmap__title">Fully customizeble to address your needs</h3>
+                    <p class="roadmap__text-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, placeat odit sed eum dolorem iure nam neque. Voluptate et optio nulla consequatur rerum! Consectetur, consequatur.</p>
+                </div>
+                <div class="roadmap__picture">
+                    <img src="assets/img/screen-02.png" alt="picture roadmap">
+                </div>
+            </div>
+            <div class="roadmap__item">
+                <div class="roadmap__description">
+                    <h3 class="roadmap__title">Pre-built Dashboard Templates</h3>
+                    <p class="roadmap__text-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, placeat odit sed eum dolorem iure nam neque. Voluptate et optio nulla consequatur rerum! Consectetur, consequatur.</p>
+                </div>
+                <div class="roadmap__picture">
+                    <img src="assets/img/screen-03.png" alt="picture roadmap">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4 part -->
+    <section class="pricing-plans">
+        <div class="wrap wrap-padding">
+            <div class="pricing-plans__description">
+                <h3 class="pricing-plans__title">Pricing Plans</h3>
+                <p class="pricing-plans__text-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consectetur iusto delectus et eos dolor?</p>
+            </div>
+            <div class="pricing-plans__rates">
+                <div class="rates-item">
+                    <h4 class="rates-item__title">Starter</h4>
+                    <p class="rates-item__text-block">up to 3 users</p>
+                    <p class="rates-item__price">
+                        <span class="rates-item__currency">$</span>
+                        29
+                    </p>
+                    <p class="rates-item__subtitle">per month</p>
+                    <button class="rates-item__order-btn">Order</button>
+                </div>
+                <div class="rates-item--pink">
+                    <h4 class="rates-item__title">Starter</h4>
+                    <p class="rates-item__text-block">up to 3 users</p>
+                    <p class="rates-item__price">
+                        <span class="rates-item__currency">$</span>
+                        29
+                    </p>
+                    <p class="rates-item__subtitle">per month</p>
+                    <button class="rates-item__order-btn">Order</button>
+                </div>
+                <div class="rates-item">
+                    <h4 class="rates-item__title">Starter</h4>
+                    <p class="rates-item__text-block">up to 3 users</p>
+                    <p class="rates-item__price">
+                        <span class="rates-item__currency">$</span>
+                        29
+                    </p>
+                    <p class="rates-item__subtitle">per month</p>
+                    <button class="rates-item__order-btn">Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-menu">
+        <div class="footer-menu__wrapper wrap wrap-padding">
+            <div class="footer-menu__logo">
+                <img src="assets/icons/logo-gray.svg" alt="footer logo">
+                <p></p>
+            </div>
+            <ul class="footer-menu__list">
+                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Product</a></li>
+                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Pricing Plans</a></li>
+                <li class="footer-menu__item"><a href="#" class="footer-menu__link">FAQ</a></li>
+                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Blog</a></li>
+            </ul>
+            <div class="footer-menu__links">
+                <a href="#"><img src="assets/icons/Facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="assets/icons/Twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="assets/icons/Instagram.svg" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
